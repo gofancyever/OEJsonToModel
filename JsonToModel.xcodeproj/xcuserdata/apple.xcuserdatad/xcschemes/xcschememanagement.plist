@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>OEJsonToProperty.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>18C326BB1DCA056000C316FF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>18C663B21DC8C155009667E8</key>
 		<dict>
 			<key>primary</key>

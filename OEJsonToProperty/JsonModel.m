@@ -21,17 +21,17 @@
 }
 - (NSString *)convertClassName:(id)value {
     if ([value isKindOfClass:[NSString class]]) {
-        return @"NSString *";
+        return @"@property (nonatomic,strong) NSString *";
     }
     
     else if ([value isKindOfClass:[NSNumber class]]) {
-        return @"NSInteger ";
+        return @"@property (nonatomic,assign) NSArray *";
     }
     else if ([value isKindOfClass:[NSArray class]]) {
-        return @"NSArray *";
+        return @"@property (nonatomic,strong) NSArray *";
     }
     else {
-        return @"<#ClassName#>";
+        return @"@property (nonatomic,strong) <#ClassName#>";
     }
 }
 @end

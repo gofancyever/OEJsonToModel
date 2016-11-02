@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18C326BF1DCA056000C316FF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C326BE1DCA056000C316FF /* Cocoa.framework */; };
+		18C326C51DCA056000C316FF /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C326C41DCA056000C316FF /* SourceEditorExtension.m */; };
+		18C326C81DCA056000C316FF /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C326C71DCA056000C316FF /* SourceEditorCommand.m */; };
+		18C326CC1DCA056000C316FF /* OEJsonToProperty.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 18C326BC1DCA056000C316FF /* OEJsonToProperty.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		18C326D51DCA110800C316FF /* ConvertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C326D21DCA110800C316FF /* ConvertTool.m */; };
+		18C326D61DCA110800C316FF /* JsonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C326D41DCA110800C316FF /* JsonModel.m */; };
+		18C326D71DCA112100C316FF /* JsonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C326D41DCA110800C316FF /* JsonModel.m */; };
+		18C326D81DCA113000C316FF /* ConvertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C326D21DCA110800C316FF /* ConvertTool.m */; };
 		18C663B81DC8C155009667E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C663B71DC8C155009667E8 /* AppDelegate.m */; };
 		18C663BB1DC8C155009667E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C663BA1DC8C155009667E8 /* main.m */; };
 		18C663BE1DC8C155009667E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C663BD1DC8C155009667E8 /* ViewController.m */; };
@@ -14,11 +22,16 @@
 		18C663C31DC8C155009667E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C663C11DC8C155009667E8 /* Main.storyboard */; };
 		18C663CE1DC8C155009667E8 /* JsonToModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C663CD1DC8C155009667E8 /* JsonToModelTests.m */; };
 		18C663D91DC8C155009667E8 /* JsonToModelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C663D81DC8C155009667E8 /* JsonToModelUITests.m */; };
-		18C663E81DC8CBB7009667E8 /* ConvertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C663E71DC8CBB7009667E8 /* ConvertTool.m */; };
-		18C663EB1DC8CBC2009667E8 /* JsonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C663EA1DC8CBC2009667E8 /* JsonModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		18C326CA1DCA056000C316FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18C663AB1DC8C155009667E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18C326BB1DCA056000C316FF;
+			remoteInfo = OEJsonToProperty;
+		};
 		18C663CA1DC8C155009667E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 18C663AB1DC8C155009667E8 /* Project object */;
@@ -35,7 +48,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		18C326D01DCA056000C316FF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				18C326CC1DCA056000C316FF /* OEJsonToProperty.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		18C326BC1DCA056000C316FF /* OEJsonToProperty.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OEJsonToProperty.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C326BE1DCA056000C316FF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		18C326C21DCA056000C316FF /* OEJsonToProperty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OEJsonToProperty.entitlements; sourceTree = "<group>"; };
+		18C326C31DCA056000C316FF /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		18C326C41DCA056000C316FF /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		18C326C61DCA056000C316FF /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		18C326C71DCA056000C316FF /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		18C326C91DCA056000C316FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C326D11DCA110800C316FF /* ConvertTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertTool.h; sourceTree = "<group>"; };
+		18C326D21DCA110800C316FF /* ConvertTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertTool.m; sourceTree = "<group>"; };
+		18C326D31DCA110800C316FF /* JsonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonModel.h; sourceTree = "<group>"; };
+		18C326D41DCA110800C316FF /* JsonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonModel.m; sourceTree = "<group>"; };
 		18C663B31DC8C155009667E8 /* JsonToModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonToModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C663B61DC8C155009667E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18C663B71DC8C155009667E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,13 +90,17 @@
 		18C663D41DC8C155009667E8 /* JsonToModelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonToModelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C663D81DC8C155009667E8 /* JsonToModelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonToModelUITests.m; sourceTree = "<group>"; };
 		18C663DA1DC8C155009667E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18C663E61DC8CBB7009667E8 /* ConvertTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertTool.h; sourceTree = "<group>"; };
-		18C663E71DC8CBB7009667E8 /* ConvertTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertTool.m; sourceTree = "<group>"; };
-		18C663E91DC8CBC2009667E8 /* JsonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonModel.h; sourceTree = "<group>"; };
-		18C663EA1DC8CBC2009667E8 /* JsonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		18C326B91DCA056000C316FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C326BF1DCA056000C316FF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18C663B01DC8C155009667E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,12 +125,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18C326BD1DCA056000C316FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18C326BE1DCA056000C316FF /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18C326C01DCA056000C316FF /* OEJsonToProperty */ = {
+			isa = PBXGroup;
+			children = (
+				18C326D11DCA110800C316FF /* ConvertTool.h */,
+				18C326D21DCA110800C316FF /* ConvertTool.m */,
+				18C326D31DCA110800C316FF /* JsonModel.h */,
+				18C326D41DCA110800C316FF /* JsonModel.m */,
+				18C326C31DCA056000C316FF /* SourceEditorExtension.h */,
+				18C326C41DCA056000C316FF /* SourceEditorExtension.m */,
+				18C326C61DCA056000C316FF /* SourceEditorCommand.h */,
+				18C326C71DCA056000C316FF /* SourceEditorCommand.m */,
+				18C326C91DCA056000C316FF /* Info.plist */,
+				18C326C11DCA056000C316FF /* Supporting Files */,
+			);
+			path = OEJsonToProperty;
+			sourceTree = "<group>";
+		};
+		18C326C11DCA056000C316FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18C326C21DCA056000C316FF /* OEJsonToProperty.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		18C663AA1DC8C155009667E8 = {
 			isa = PBXGroup;
 			children = (
 				18C663B51DC8C155009667E8 /* JsonToModel */,
 				18C663CC1DC8C155009667E8 /* JsonToModelTests */,
 				18C663D71DC8C155009667E8 /* JsonToModelUITests */,
+				18C326C01DCA056000C316FF /* OEJsonToProperty */,
+				18C326BD1DCA056000C316FF /* Frameworks */,
 				18C663B41DC8C155009667E8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +176,7 @@
 				18C663B31DC8C155009667E8 /* JsonToModel.app */,
 				18C663C91DC8C155009667E8 /* JsonToModelTests.xctest */,
 				18C663D41DC8C155009667E8 /* JsonToModelUITests.xctest */,
+				18C326BC1DCA056000C316FF /* OEJsonToProperty.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,14 +184,10 @@
 		18C663B51DC8C155009667E8 /* JsonToModel */ = {
 			isa = PBXGroup;
 			children = (
-				18C663E61DC8CBB7009667E8 /* ConvertTool.h */,
-				18C663E71DC8CBB7009667E8 /* ConvertTool.m */,
 				18C663B61DC8C155009667E8 /* AppDelegate.h */,
 				18C663B71DC8C155009667E8 /* AppDelegate.m */,
 				18C663BC1DC8C155009667E8 /* ViewController.h */,
 				18C663BD1DC8C155009667E8 /* ViewController.m */,
-				18C663E91DC8CBC2009667E8 /* JsonModel.h */,
-				18C663EA1DC8CBC2009667E8 /* JsonModel.m */,
 				18C663BF1DC8C155009667E8 /* Assets.xcassets */,
 				18C663C11DC8C155009667E8 /* Main.storyboard */,
 				18C663C41DC8C155009667E8 /* Info.plist */,
@@ -150,6 +225,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		18C326BB1DCA056000C316FF /* OEJsonToProperty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C326CF1DCA056000C316FF /* Build configuration list for PBXNativeTarget "OEJsonToProperty" */;
+			buildPhases = (
+				18C326B81DCA056000C316FF /* Sources */,
+				18C326B91DCA056000C316FF /* Frameworks */,
+				18C326BA1DCA056000C316FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OEJsonToProperty;
+			productName = OEJsonToProperty;
+			productReference = 18C326BC1DCA056000C316FF /* OEJsonToProperty.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
 		18C663B21DC8C155009667E8 /* JsonToModel */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18C663DD1DC8C155009667E8 /* Build configuration list for PBXNativeTarget "JsonToModel" */;
@@ -157,10 +249,12 @@
 				18C663AF1DC8C155009667E8 /* Sources */,
 				18C663B01DC8C155009667E8 /* Frameworks */,
 				18C663B11DC8C155009667E8 /* Resources */,
+				18C326D01DCA056000C316FF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				18C326CB1DCA056000C316FF /* PBXTargetDependency */,
 			);
 			name = JsonToModel;
 			productName = JsonToModel;
@@ -212,6 +306,10 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Gaooof;
 				TargetAttributes = {
+					18C326BB1DCA056000C316FF = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 					18C663B21DC8C155009667E8 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
@@ -244,11 +342,19 @@
 				18C663B21DC8C155009667E8 /* JsonToModel */,
 				18C663C81DC8C155009667E8 /* JsonToModelTests */,
 				18C663D31DC8C155009667E8 /* JsonToModelUITests */,
+				18C326BB1DCA056000C316FF /* OEJsonToProperty */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		18C326BA1DCA056000C316FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18C663B11DC8C155009667E8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,15 +381,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		18C326B81DCA056000C316FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C326C51DCA056000C316FF /* SourceEditorExtension.m in Sources */,
+				18C326D61DCA110800C316FF /* JsonModel.m in Sources */,
+				18C326D51DCA110800C316FF /* ConvertTool.m in Sources */,
+				18C326C81DCA056000C316FF /* SourceEditorCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18C663AF1DC8C155009667E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				18C663BE1DC8C155009667E8 /* ViewController.m in Sources */,
+				18C326D81DCA113000C316FF /* ConvertTool.m in Sources */,
+				18C326D71DCA112100C316FF /* JsonModel.m in Sources */,
 				18C663BB1DC8C155009667E8 /* main.m in Sources */,
-				18C663EB1DC8CBC2009667E8 /* JsonModel.m in Sources */,
 				18C663B81DC8C155009667E8 /* AppDelegate.m in Sources */,
-				18C663E81DC8CBB7009667E8 /* ConvertTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +423,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		18C326CB1DCA056000C316FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18C326BB1DCA056000C316FF /* OEJsonToProperty */;
+			targetProxy = 18C326CA1DCA056000C316FF /* PBXContainerItemProxy */;
+		};
 		18C663CB1DC8C155009667E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 18C663B21DC8C155009667E8 /* JsonToModel */;
@@ -330,6 +452,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		18C326CD1DCA056000C316FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OEJsonToProperty/OEJsonToProperty.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OEJsonToProperty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = Gaooof.JsonToModel.OEJsonToProperty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		18C326CE1DCA056000C316FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OEJsonToProperty/OEJsonToProperty.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OEJsonToProperty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = Gaooof.JsonToModel.OEJsonToProperty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		18C663DB1DC8C155009667E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -494,6 +644,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		18C326CF1DCA056000C316FF /* Build configuration list for PBXNativeTarget "OEJsonToProperty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C326CD1DCA056000C316FF /* Debug */,
+				18C326CE1DCA056000C316FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		18C663AE1DC8C155009667E8 /* Build configuration list for PBXProject "JsonToModel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -510,6 +668,7 @@
 				18C663DF1DC8C155009667E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18C663E01DC8C155009667E8 /* Build configuration list for PBXNativeTarget "JsonToModelTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +677,7 @@
 				18C663E21DC8C155009667E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18C663E31DC8C155009667E8 /* Build configuration list for PBXNativeTarget "JsonToModelUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +686,7 @@
 				18C663E51DC8C155009667E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
