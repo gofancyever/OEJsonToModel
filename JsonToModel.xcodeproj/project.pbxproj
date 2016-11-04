@@ -308,10 +308,12 @@
 				TargetAttributes = {
 					18C326BB1DCA056000C316FF = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = AU2RF5G37H;
 						ProvisioningStyle = Automatic;
 					};
 					18C663B21DC8C155009667E8 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = AU2RF5G37H;
 						ProvisioningStyle = Automatic;
 					};
 					18C663C81DC8C155009667E8 = {
@@ -456,7 +458,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OEJsonToProperty/OEJsonToProperty.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = AU2RF5G37H;
 				INFOPLIST_FILE = OEJsonToProperty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -470,7 +474,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OEJsonToProperty/OEJsonToProperty.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = AU2RF5G37H;
 				INFOPLIST_FILE = OEJsonToProperty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -571,7 +577,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = AU2RF5G37H;
 				INFOPLIST_FILE = JsonToModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Gaooof.JsonToModel;
@@ -583,7 +591,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = AU2RF5G37H;
 				INFOPLIST_FILE = JsonToModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Gaooof.JsonToModel;
@@ -651,6 +661,7 @@
 				18C326CE1DCA056000C316FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18C663AE1DC8C155009667E8 /* Build configuration list for PBXProject "JsonToModel" */ = {
 			isa = XCConfigurationList;

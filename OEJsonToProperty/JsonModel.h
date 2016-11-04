@@ -13,4 +13,5 @@
 -(instancetype)initWithKey:(NSString *)key value:(id)value;
 @property (nonatomic,strong) NSString *propertyName;
 @property (nonatomic,strong) NSString *propertyClass;
+
 @end

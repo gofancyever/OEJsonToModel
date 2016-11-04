@@ -25,7 +25,7 @@
     }
     
     else if ([value isKindOfClass:[NSNumber class]]) {
-        return @"@property (nonatomic,assign) NSArray *";
+        return @"@property (nonatomic,assign) NSInteger *";
     }
     else if ([value isKindOfClass:[NSArray class]]) {
         return @"@property (nonatomic,strong) NSArray *";
