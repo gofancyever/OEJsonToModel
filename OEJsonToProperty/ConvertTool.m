@@ -47,10 +47,14 @@ static id _instance;
 -(id)dictionaryWithJsonStr:(NSString *)jsonString{
     jsonString = [[jsonString stringByReplacingOccurrencesOfString:@" " withString:@""] stringByReplacingOccurrencesOfString:@" " withString:@""];
     //中文标点
+//    jsonString = [jsonString stringByReplacingOccurrencesOfString:@"“" withString:@"\"" options:NSRegularExpressionSearch range:NSMakeRange(0, jsonString.length)];
+    
     jsonString = [jsonString stringByReplacingOccurrencesOfString:@"，" withString:@","];
     jsonString = [jsonString stringByReplacingOccurrencesOfString:@"“" withString:@"\""];
+    jsonString = [jsonString stringByReplacingOccurrencesOfString:@"”" withString:@"\""];
     jsonString = [jsonString stringByReplacingOccurrencesOfString:@"：" withString:@":"];
     //去除多余 ，号
+    jsonString = [jsonString stringByReplacingOccurrencesOfString:@"\n" withString:@"" ];
     jsonString = [jsonString stringByReplacingOccurrencesOfString:@",}" withString:@"}"];
     NSLog(@"jsonString=%@",jsonString);
     NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
@@ -73,7 +77,7 @@ static id _instance;
         NSArray *modelArr = [tool convertWithDict:result];
         NSMutableString *resultStr = [NSMutableString string];
         for (JsonModel *model in modelArr) {
-            NSString *propertyStr = [NSString stringWithFormat:@"%@%@\n",model.propertyClass,model.propertyName];
+            NSString *propertyStr = [NSString stringWithFormat:@"%@%;@\n",model.propertyClass,model.propertyName];
             [resultStr appendString:propertyStr];
         }
         return resultStr;
