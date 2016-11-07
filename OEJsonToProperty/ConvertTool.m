@@ -77,7 +77,7 @@ static id _instance;
         NSArray *modelArr = [tool convertWithDict:result];
         NSMutableString *resultStr = [NSMutableString string];
         for (JsonModel *model in modelArr) {
-            NSString *propertyStr = [NSString stringWithFormat:@"%@%;@\n",model.propertyClass,model.propertyName];
+            NSString *propertyStr = [NSString stringWithFormat:@"%@%@;\n",model.propertyClass,model.propertyName];
             [resultStr appendString:propertyStr];
         }
         return resultStr;
