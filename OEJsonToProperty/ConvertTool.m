@@ -83,10 +83,10 @@ static id _instance;
         return resultStr;
     }
     else if ([result isKindOfClass:[NSArray class]]) {
-        return  @"";
+        return  @"不支持array";
     }
     else{
-        return  @"";
+        return  @"未识别";
     }
 }
 @end

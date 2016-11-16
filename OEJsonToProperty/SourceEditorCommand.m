@@ -29,10 +29,8 @@
     id result = [[ConvertTool shareTool] dictionaryWithJsonStr:text];
 
     if ([result isKindOfClass:[NSError class]]) {
-        NSError *error = result;
-        [invocation.buffer.lines addObject:@"Error：Json is invalid"];
+        invocation.buffer.lines[start] = @"Error：Json is invalid";
     }else{
-
         invocation.buffer.lines[start] = [[ConvertTool shareTool] dealClassNameWithJsonResult:result];
     }
     completionHandler(nil);
