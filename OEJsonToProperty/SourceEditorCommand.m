@@ -30,11 +30,10 @@
 
     if ([result isKindOfClass:[NSError class]]) {
         NSError *error = result;
-        NSLog(@"Error：Json is invalid");
+        [invocation.buffer.lines addObject:@"Error：Json is invalid"];
     }else{
 
         invocation.buffer.lines[start] = [[ConvertTool shareTool] dealClassNameWithJsonResult:result];
-
     }
     completionHandler(nil);
 }
