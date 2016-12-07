@@ -47,8 +47,6 @@ static id _instance;
 -(id)dictionaryWithJsonStr:(NSString *)jsonString{
     jsonString = [[jsonString stringByReplacingOccurrencesOfString:@" " withString:@""] stringByReplacingOccurrencesOfString:@" " withString:@""];
     //中文标点
-//    jsonString = [jsonString stringByReplacingOccurrencesOfString:@"“" withString:@"\"" options:NSRegularExpressionSearch range:NSMakeRange(0, jsonString.length)];
-    
     jsonString = [jsonString stringByReplacingOccurrencesOfString:@"，" withString:@","];
     jsonString = [jsonString stringByReplacingOccurrencesOfString:@"“" withString:@"\""];
     jsonString = [jsonString stringByReplacingOccurrencesOfString:@"”" withString:@"\""];
